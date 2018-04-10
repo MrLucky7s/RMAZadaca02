@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Zadaca2</string>
+    <string name="convert">Convert!</string>
+
+    <string-array name="units">
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Farenheit</item>
+    </string-array>
+
+    <string-array name="bytes">
+        <item>Byte</item>
+        <item>Kilobyte</item>
+        <item>Megybyte</item>
+        <item>Gigabyte</item>
+    </string-array>
+
+    <string-array name="grams">
+        <item>g</item>
+        <item>kg</item>
+        <item>ton</item>
+    </string-array>
+
+    <string-array name="metre">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+    </string-array>
+
 </resources>

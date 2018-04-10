@@ -8,18 +8,22 @@
     <Button
         android:id="@+id/bTemperature"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_thermometer"/>
     <Button
         android:id="@+id/bData"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_folder"/>
     <Button
         android:id="@+id/bWeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_weight"/>
     <Button
         android:id="@+id/bLength"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_length"/>
 
 </LinearLayout>
