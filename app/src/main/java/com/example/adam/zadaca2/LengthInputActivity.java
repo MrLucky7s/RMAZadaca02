@@ -23,14 +23,14 @@ public class LengthInputActivity extends AppCompatActivity {
         toSpinner.setAdapter(adapter);
     }
 
-    public void convert (View view){
+    public void convert(View view) {
         Spinner fromSpinner, toSpinner;
         EditText fromEditText, toEditText;
 
         fromSpinner = findViewById(R.id.spFrom_Spinner);
         toSpinner = findViewById(R.id.spTo_Spinner);
         fromEditText = findViewById(R.id.etText_From);
-        toEditText=findViewById(R.id.etText_To);
+        toEditText = findViewById(R.id.etText_To);
 
         String fromString = (String) fromSpinner.getSelectedItem();
         String toString = (String) toSpinner.getSelectedItem();
@@ -44,10 +44,10 @@ public class LengthInputActivity extends AppCompatActivity {
         toEditText.setText(String.valueOf(result));
 
 
-
     }
 
-    public LengthInputActivity(){}
+    public LengthInputActivity() {
+    }
 
     public enum Unit {
         MILIMETER,
