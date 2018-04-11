@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Zadaca2</string>
     <string name="convert">Convert!</string>
+    <string name="rezultat">rezultat</string>
 
     <string-array name="units">
         <item>Celsius</item>
