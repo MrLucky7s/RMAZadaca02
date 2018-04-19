@@ -50,10 +50,10 @@ public class LengthInputActivity extends AppCompatActivity {
     }
 
     public enum Unit {
-        MILIMETER,
-        CENTIMETER,
-        METER,
-        KILOMETER;
+        MM,
+        CM,
+        M,
+        KM;
 
         public static Unit fromString(String text) {
             if (text != null) {
@@ -73,39 +73,39 @@ public class LengthInputActivity extends AppCompatActivity {
         double constant = 1;
 
         switch (from) {
-            case MILIMETER:
-                if (to == Unit.CENTIMETER) {
+            case MM:
+                if (to == Unit.CM) {
                     constant = 0.1;
-                } else if (to == Unit.METER) {
+                } else if (to == Unit.M) {
                     constant = 0.001;
-                } else if (to == Unit.KILOMETER) {
+                } else if (to == Unit.KM) {
                     constant = 1e-6;
                 }
                 break;
-            case CENTIMETER:
-                if (to == Unit.MILIMETER) {
+            case CM:
+                if (to == Unit.MM) {
                     constant = 10;
-                } else if (to == Unit.METER) {
+                } else if (to == Unit.M) {
                     constant = 0.01;
-                } else if (to == Unit.KILOMETER) {
+                } else if (to == Unit.KM) {
                     constant = 1e-5;
                 }
                 break;
-            case METER:
-                if (to == Unit.MILIMETER) {
+            case M:
+                if (to == Unit.MM) {
                     constant = 1000;
-                } else if (to == Unit.CENTIMETER) {
+                } else if (to == Unit.CM) {
                     constant = 100;
-                } else if (to == Unit.KILOMETER) {
+                } else if (to == Unit.KM) {
                     constant = 0.001;
                 }
                 break;
-            case KILOMETER:
-                if (to == Unit.MILIMETER) {
+            case KM:
+                if (to == Unit.MM) {
                     constant = 1e+6;
-                } else if (to == Unit.CENTIMETER) {
+                } else if (to == Unit.CM) {
                     constant = 100000;
-                } else if (to == Unit.METER) {
+                } else if (to == Unit.M) {
                     constant = 1000;
                 }
                 break;
